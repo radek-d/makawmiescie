@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap&subset=latin,latin-ext" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/navicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mąka w Mieście - Autentyczna kuchnia włoska w sercu Olkusza. Ręcznie robiony makaron, pizza napoletana i wyjątkowa atmosfera." />
+    <meta property="og:title" content="Mąka w Mieście" />
+    <meta property="og:description" content="Odkryj smak prawdziwych Włoch. Zapraszamy na domowy makaron i pizzę z pieca." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://makawmiescie.pl/" />
+    
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/src/assets/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/src/assets/fonts/playfair-display-v40-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preload LCP Image -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=2000" as="image">
+    
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <title>Mąka w Mieście</title>
+    <style>
+      :root {
+        --color-brand-black: #0A0A0A;
+        --color-brand-charcoal: #1A1A1A;
+        --color-brand-white: #FFFFFF;
+        --font-serif: "Playfair Display", serif;
+        --font-sans: Inter, sans-serif;
+      }
+      body {
+        margin: 0;
+        background-color: var(--color-brand-white);
+        color: var(--color-brand-charcoal);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+      .fixed { position: fixed; }
+      .w-full { width: 100%; }
+      .z-50 { z-index: 50; }
+      .flex { display: flex; }
+      .items-center { align-items: center; }
+      .justify-center { justify-content: center; }
+      .h-screen { height: 100vh; }
+      .relative { position: relative; }
+      .overflow-hidden { overflow: hidden; }
+      .bg-transparent { background-color: transparent; }
+      .text-white { color: white; }
+      .font-serif { font-family: var(--font-serif); }
+      .text-center { text-align: center; }
+      .hero-title { font-size: 3rem; line-height: 1.1; }
+      @media (min-width: 768px) {
+        .hero-title { font-size: 4.5rem; }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Mąka w Mieście",
+        "image": "https://makawmiescie.pl/og-image.jpg",
+        "@id": "https://makawmiescie.pl",
+        "url": "https://makawmiescie.pl",
+        "telephone": "+48509609319",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Rynek 23",
+          "addressLocality": "Olkusz",
+          "postalCode": "32-300",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.279338,
+          "longitude": 19.558148
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "opens": "12:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "12:00",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "12:00",
+            "closes": "21:00"
+          }
+        ],
+        "servesCuisine": "Italian",
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-brand-black: #0A0A0A;
+  --color-brand-charcoal: #1A1A1A;
+  --color-brand-gray-dark: #2A2A2A;
+  --color-brand-gray: #404040;
+  --color-brand-gray-light: #E5E5E5;
+  --color-brand-white: #FFFFFF;
+  --color-brand-accent: #3B82F6;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: Inter, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-brand-charcoal font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@utility glass-card {
+  @apply bg-white/90 backdrop-blur-xl border border-gray-200 shadow-2xl;
+}
+
+@utility modern-shadow {
+  box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.15);
+}
+
+@utility gradient-text {
+  background: linear-gradient(135deg, #0A0A0A 0%, #404040 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
